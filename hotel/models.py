@@ -39,7 +39,8 @@ class Staff(models.Model):
     role = models.CharField(max_length = 30, choices = ROLES)
     
     def __str__(self):
-        return self.staff_id.first_name + " " + self.staff_id.last_name
+        return self.staff_id.first_name 
+        # + " " + self.contact
 
 class Order(models.Model):
     pending = 'Pending'
